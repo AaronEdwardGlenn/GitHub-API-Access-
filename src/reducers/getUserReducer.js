@@ -1,4 +1,4 @@
-import { FETCH_USER_FROM_API, GET_USER } from '../actions/userActions';
+import { FETCH_USER_FROM_API, GET_USER } from '../dater/actions/getGitUserACT';
 
 const initialState = {};
 
