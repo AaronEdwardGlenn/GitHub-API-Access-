@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { fetchUser } from '../../src/dater/actions/selectors/getUserSelector';
+import { fetchUser } from '../dater/actions/selectors/getUserSelector';
 import styles from './User.css';
 
 export default function User(){
