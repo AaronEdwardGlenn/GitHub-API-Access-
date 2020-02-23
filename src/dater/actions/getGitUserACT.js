@@ -1,4 +1,4 @@
-import { getGitUser } from '../../src/services/githubApi';
+import { getGitUser } from '../../services/githubApi';
 
 export const FETCH_USER_FROM_API = 'FETCH_USER_FROM_API';
 export const GET_USER = 'GET_USER';

@@ -1,4 +1,4 @@
-import { getAllRepos } from '../../src/services/githubApi';
+import { getAllRepos } from '../../services/githubApi';
 
 export const FETCH_ALL_REPOS = 'FETCH_ALL_REPOS';
 export const GET_REPOS = 'GET_REPOS';
