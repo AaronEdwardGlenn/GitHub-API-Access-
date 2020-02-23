@@ -12,8 +12,8 @@ export const getAllRepos = url => {
       description: 'Hella Tight'
     },
     {
-      name: 'Super repo',
-      description: 'Mega super'
+      name: 'Cool Cool',
+      description: 'Description is Great'
     }
   ]);
 };
