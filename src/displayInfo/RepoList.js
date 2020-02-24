@@ -19,13 +19,13 @@ export default function RepoList(){
 
   return (
     <>
-      {repoList.length > 0 && 
+      
       <section>
         <h2>Repos:</h2>
         <ul className={styles.RepoList}>
           {repoList}
         </ul> 
-      </section>   }
+      </section>
     </>
   );
 }

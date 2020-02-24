@@ -4,7 +4,7 @@ import { getUserFromAPI } from '../../dater/actions/getGitUserACT';
 import { fetchRepos } from '../../dater/actions/getAllReposACT';
 import User from '../../displayInfo/User';
 
-export default function SearchForm(){
+export default function SearchForUser(){
   const [query, setQuery] = useState('');
   const dispatch = useDispatch();
 

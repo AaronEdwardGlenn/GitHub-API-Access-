@@ -14,7 +14,7 @@ export default function User(){
   }
 
   return (
-    <section id='user' className={styles.User}>
+    <section className={styles.User}>
       <h1>{user.name} Link: <a href={user.url}>{user.url}</a></h1>
       <p>Followers: {user.numFollowers} - Following: {user.numFollowing}</p>
     </section>

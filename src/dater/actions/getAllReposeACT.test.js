@@ -1,6 +1,6 @@
-import { FETCH_ALL_REPOS, GET_REPOS, fetchRepos } from './repoActions';
+import { FETCH_ALL_REPOS, GET_REPOS, fetchRepos } from './getAllReposACT';
 
-jest.mock('../../services/githubAPI.js');
+jest.mock('../../services/__mocks__/githubApi');
 
 describe('get all REPS Action', () => {
   it('initiates the FetchRepos ACT', () => {
@@ -12,14 +12,6 @@ describe('get all REPS Action', () => {
         expect(dispatch).toHaveBeenCalledWith({
           type: GET_REPOS,
           payload: [
-            {
-              name: 'Hella Hella',
-              description: 'Hella Tight'
-            },
-            {
-              name: 'Cool Cool',
-              description: 'Description is Great'
-            }
           ]
         });
       });

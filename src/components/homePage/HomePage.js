@@ -1,12 +1,12 @@
 import React from 'react';
-import SearchForm from '../searchForm/SearchForm';
-import RepoList from '../repoList/RepoList';
+import SearchForUser from '../searchForUser/searchForUser';
+import RepoList from '../../../src/displayInfo/RepoList';
 
 
 export default function GithubViewer(){
   return (
     <>
-      <SearchForm />
+      <SearchForUser />
       <RepoList />
     </>
   );

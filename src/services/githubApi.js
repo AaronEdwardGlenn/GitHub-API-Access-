@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 export const getGitUser = user => {
   return fetch(`https://api.github.com/users/${user}`)
     .then(res => Promise.all([res.ok, res.json()]))

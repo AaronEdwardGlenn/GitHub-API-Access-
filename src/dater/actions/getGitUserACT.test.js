@@ -1,6 +1,6 @@
 import { FETCH_USER_FROM_API, getUserFromAPI, GET_USER } from './getGitUserACT';
 
-jest.mock('../services/__mocks__/githubApi');
+jest.mock('../../services/__mocks__/githubApi');
 
 describe('ACTions', () => {
   it('getUserFromAPI functions properly', () => {
@@ -14,8 +14,11 @@ describe('ACTions', () => {
         expect(dispatch).toHaveBeenCalledWith({
           type: GET_USER,
           payload: {
-            id: 1234,
-            name: 'CalvinCoolidge'
+            name: 'Ilya Solovyov',
+            numFollowers: 36,
+            numFollowing: 4,
+            repos_url: 'https://api.github.com/users/user/repos',
+            url: 'https://github.com/user'
           }
         });
       });
